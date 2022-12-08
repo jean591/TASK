@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>geolocalizacion</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="ion-padding" >
+    <ion-label>Coordenadas</ion-label>
+  </div>
+   <div class="ion-padding">
+
+    <ion-item>
+      <ion-label>
+        Latitud : {{lat}}
+      </ion-label>
+    </ion-item>
+   </div>
+
+   <div class="ion-padding">
+
+    <ion-item>
+      <ion-label>
+        Longitud: {{lon}}
+      </ion-label>
+    </ion-item>
+   </div>
+  
+  
+<div class="ion-padding">
+<ion-button color="success" expand="full" (click)="ngAfterViewInit()"> Mis Coordenadas</ion-button>
+</div>
+
+</ion-content>

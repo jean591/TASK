@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Agregar Tarea</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content colo="success">
+<div class="ion-padding-vertical">
+  <ion-card  class="ion-text-center">
+    <ion-card-title>
+      <ion-label>
+        <h1>Ingresar nueva tarea</h1>
+      </ion-label>
+    </ion-card-title>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Titulo</ion-label>
+        <ion-input type="text" [(ngModel)]="titulotarea"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Descripcion</ion-label>
+        <ion-input type="text" [(ngModel)]="textotarea"></ion-input>
+      </ion-item>
+    </ion-card-content>
+    <ion-button color="success" shape="block" (click)="guardar()">Guardar tarea</ion-button>
+  </ion-card>
+
+</div>
+
+</ion-content>

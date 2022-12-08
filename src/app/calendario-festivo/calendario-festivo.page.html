@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Calendario Festivo</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content color="success">
+  <ion-card>
+
+ 
+<ion-list>
+  <ion-item-sliding *ngFor="let item of getdata" >
+    <div>
+      
+        <h1> {{item.Fecha}}</h1> 
+        <a> {item.Fiesta}}</a>
+        <p> {{item.Detalles}}</p>
+     
+    </div>
+
+  
+    </ion-item-sliding>
+</ion-list>
+</ion-card>
+</ion-content>
